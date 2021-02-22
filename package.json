@@ -1,0 +1,28 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node":"14.15.4",
+    "npm":"6.14.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon app",
+    "build":"cd front-end && npm install",
+    "install-client":"cd front-end && npm install",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
+    "client":"cd front-end && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.17"
+  }
+}
