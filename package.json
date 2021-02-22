@@ -9,9 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon app",
+    "start":"nodemon app",
     "build":"cd front-end && npm install",
-    "install-client":"cd front-end && npm install",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
     "client":"cd front-end && npm start"
   },
